@@ -4,4 +4,6 @@ main.remove();
 const newHeader = document.createElement("h1");
 newHeader.id = "victory";
 newHeader.textContent = "Alejandro is the champion";
-document.body.append(newHeader);
+const child = document.querySelector('script[type="text/javascript"]');
+// document.body.append(newHeader);
+document.body.insertBefore(newHeader,child);
